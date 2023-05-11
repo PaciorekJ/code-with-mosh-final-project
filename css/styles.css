@@ -1,3 +1,4 @@
+/* Typography */
 html {
     font-size: 62.5%;
     /* Scales down to 10px per rem */
@@ -55,5 +56,34 @@ p {
 
     h3 {
         font-size: 2.4rem;
+    }
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+.link-arrow {
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.link-arrow::after {
+    content: '-->';
+    margin-left: 5px;
+    transition: margin .20s;
+}
+
+.link-arrow:hover::after {
+    content: '-->';
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 1224px) {
+    .link-arrow {
+        font-size: 1.5rem;
     }
 }
