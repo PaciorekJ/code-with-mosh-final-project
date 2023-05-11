@@ -1,3 +1,7 @@
+body {
+    height: 100vh;
+}
+
 /* Typography */
 html {
     font-size: 62.5%;
@@ -85,5 +89,39 @@ a {
 @media screen and (min-width: 1224px) {
     .link-arrow {
         font-size: 1.5rem;
+    }
+}
+
+/* Badges */
+
+.badge {
+    font-size: 2rem;
+    border-radius: 20px;
+    padding: .5rem 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.badge--primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.badge--secondary {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.badge--small {
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .badge {
+        font-size: 1.5rem;
+    }
+
+    .badge--small {
+        font-size: 1.2rem;
     }
 }
