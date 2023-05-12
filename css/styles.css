@@ -1,4 +1,5 @@
 body {
+    width: 100vw;
     height: 100vh;
 }
 
@@ -155,7 +156,8 @@ a {
 }
 
 /* Icons */
-/* Note: Icon do not change with display */
+/* Note: Icon do not change with display, they are fixed in size */
+
 .icon {
     width: 40px;
     height: 40px;
@@ -173,4 +175,70 @@ a {
     border-radius: 100%;
     justify-content: center;
     align-items: center;
+}
+
+/* Buttons */
+
+/* Button base class */
+.button {
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 2rem 3rem;
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 2rem 0;
+}
+
+/* Button color classes */
+.button--primary {
+    background-color: var(--color-primary);
+}
+
+.button--secondary {
+    background-color: var(--color-secondary);
+}
+
+.button--accent {
+    background-color: var(--color-accent);
+}
+
+.button--outline {
+    color: var(--color-headings);
+    border: 2px solid var(--color-headings);
+}
+
+.button--primary:hover {
+    filter: brightness(1.1);
+}
+
+.button--secondary:hover {
+    filter: brightness(1.1);
+}
+
+.button--accent:hover {
+    filter: brightness(1.2);
+}
+
+.button--outline:hover {
+    background-color: var(--color-headings);
+    color: white;
+    filter: brightness(1.1);
+}
+
+.button--block {
+    width: 100%;
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .button {
+        font-size: 1.5rem;
+    }
 }
