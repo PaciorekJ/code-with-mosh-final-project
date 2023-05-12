@@ -45,7 +45,7 @@ p {
     margin-top: 0;
 }
 
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1024px) {
     body {
         font-size: 1.8rem;
     }
@@ -86,7 +86,7 @@ a {
     margin-left: 10px;
 }
 
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1024px) {
     .link-arrow {
         font-size: 1.5rem;
     }
@@ -123,5 +123,33 @@ a {
 
     .badge--small {
         font-size: 1.2rem;
+    }
+}
+
+/* Lists */
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-headings);
+}
+
+.list--inline .list__item {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.list--check {
+    list-style-image: url(../Images/check.svg);
+    padding-left: 3rem;
+}
+
+.list--check .list__item {
+    padding-left: .75rem;
+}
+
+@media screen and (min-wdith: 1024px) {
+    .list--check .list__item {
+        padding-left: .2rem;
     }
 }
