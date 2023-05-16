@@ -616,7 +616,72 @@ a {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 85%);
 }
 
+/* General rule, useful for blocks */
 .container {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+/* Navigation Bar */
+
+.nav {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.nav__list {
+    width: 100%;
+    margin: 0;
+}
+
+.nav__item {
+    padding: .5rem 2rem;
+    border-bottom: 2px solid #222;
+}
+
+.nav__item>a {
+    color: #d2d0db;
+    transition: color .4s;
+}
+
+.nav__item>a:hover {
+    color: whitesmoke;
+}
+
+.nav__toggler {
+    opacity: .5;
+    cursor: pointer;
+    transition: opacity 1s, box-shadow 1s;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+    opacity: .6;
+    box-shadow: 0 0 0 2px whitesmoke;
+    border-radius: 5px;
+}
+
+.nav__brand {
+    transform: translateY(5px);
+}
+
+@media screen and (min-width: 768px) {
+    .nav__toggler {
+        display: none;
+    }
+
+    .nav__list {
+        width: auto;
+        display: flex;
+        font-size: 1.6rem;
+        max-height: 100%;
+        opacity: 1;
+    }
+
+    .nav__item {
+        border: 0;
+    }
 }
