@@ -213,7 +213,7 @@ a {
     font-size: 1.8rem;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     outline: 0;
     border-radius: 40px;
     border: 0;
@@ -279,6 +279,7 @@ a {
 @media screen and (min-width: 1024px) {
     .button {
         font-size: 1.5rem;
+        padding: 2rem 4rem;
     }
 }
 
@@ -307,6 +308,7 @@ a {
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 100%;
 }
 
 .input-group .button {
@@ -782,14 +784,22 @@ a {
 }
 
 .block-domain__prices {
+    color: var(--color-headings);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 6rem);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 6rem);
     font-size: 2rem;
     font-weight: 600;
     justify-items: center;
     margin: 0 auto;
     max-width: 700px;
+}
+
+@media screen and (min-width: 500px) {
+    .block-domain__prices {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 6rem);
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -799,6 +809,10 @@ a {
 }
 
 /* Plans block */
+.block-plans {
+    overflow: hidden;
+}
+
 .block-plans .grid {
     gap: 8rem 4rem;
 }
@@ -806,6 +820,12 @@ a {
 .block-plans .card {
     max-width: 500px;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .block-plans .grid {
+        gap: 8rem 4rem;
+    }
 }
 
 /* Feature */
