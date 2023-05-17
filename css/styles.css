@@ -162,7 +162,7 @@ a {
     padding-left: .75rem;
 }
 
-@media screen and (min-wdith: 1024px) {
+@media screen and (min-width: 1024px) {
     .list--check .list__item {
         padding-left: .2rem;
     }
@@ -649,6 +649,7 @@ a {
 .block {
     --padding-vertical: 6rem;
     padding: var(--padding-vertical) 2rem;
+    overflow: hidden;
 }
 
 .block__header {
@@ -809,9 +810,6 @@ a {
 }
 
 /* Plans block */
-.block-plans {
-    overflow: hidden;
-}
 
 .block-plans .grid {
     gap: 8rem 4rem;
@@ -915,7 +913,7 @@ a {
 
 .footer a {
     color: #777;
-    transition: color .3;
+    transition: color .3s;
 }
 
 .footer a:hover {
